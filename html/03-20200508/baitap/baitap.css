@@ -1,0 +1,45 @@
+/* .div-con1-cha1{
+    background-color: red;
+    width: 75%;
+    height: 50px;
+}
+
+.div-con2-cha1{
+    background-color:blueviolet;
+    width: 25%;
+    height: 50px;
+}
+
+.div-cha-1{
+    display: flex;
+    background-color: burlywood;
+
+} */
+
+.div-con1-cha2{
+    background-color: darkblue;
+    width: 33%;
+    height: 30px;
+}
+
+.div-con2-cha2{
+    background-color: yellow;
+    width: 33%;
+    height: 50px;
+}
+
+.div-cha3{
+    display: flex;
+}
+
+.div-con1-cha3{
+    background-color:darkgrey;
+    width: 33%;
+    height: 80px;
+}
+
+.div-con2-cha3{
+    background-color:indianred;
+    width: 33%;
+    height: 80px;
+}

@@ -1,0 +1,23 @@
+.bang-dang-nhap {
+    width: 400px;
+    height: 200px;
+    text-align: center;
+}
+
+.user {
+    color: red;
+}
+
+.pass {
+    color: lightcoral;
+}
+
+.fontsize {
+    font-size: 22px;
+    color: lightseagreen;
+}
+
+.center{
+    text-align: center;
+    font-size: 30px;
+}

@@ -1,0 +1,15 @@
+body {
+    background-color: aquamarine;
+    border-style: solid;
+    border-color: #92a8d1;
+}
+
+h1 {
+    color: red;
+    font-size: 31px;
+}
+
+p {
+    font-size: 30px;
+    text-align: center;
+}

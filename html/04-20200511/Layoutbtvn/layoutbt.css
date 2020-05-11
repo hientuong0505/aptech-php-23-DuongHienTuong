@@ -1,0 +1,68 @@
+.div-first{
+    background-color: yellow;
+    display: flex;
+    padding: 10px;
+}
+
+.div-first1{
+    background-color: teal;
+    width: 70%;
+    height: 50px;
+    margin: 10px;
+}
+
+.div-first2{
+    background-color: blue;
+    width: 30%;
+    height: 50px;
+    margin: 10px;
+}
+
+.div-second{
+    background-color: yellow;
+    display: flex;
+    padding: 10px;
+}
+
+.div-second1{
+    background-color: teal;
+    width: 50%;
+    height: 50px;
+
+}
+
+.div-second2{
+    background-color: blue;
+    width: 50%;
+    height: 100px;
+    display: flex;
+}
+
+.second11{
+    background-color: red;
+    width: 100%;
+    height: 50px;
+    margin: 5px;
+
+}
+
+.second12{
+    background-color:black;
+    width: 100%;
+    height: 50px;
+}
+
+.second21{
+    background-color:sandybrown;
+    width: 100%;
+    height: 50px;
+    margin: 20px;
+
+}
+
+.second22{
+    background-color:khaki;
+    width: 100%;
+    height: 50px;
+    margin: 20px;
+}
