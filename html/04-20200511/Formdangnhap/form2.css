@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    height: 800px;
+    background: white;
+}
+
+.div-cha{
+    display: flex;
+    background-color: lightblue;
+}
+
+.div1{
+    background-color: lightcyan;
+    width: 60%;
+    background-image: url('tsm.jpg');
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.div2{
+    background: linear-gradient(to bottom left, pink 20%, lightblue 80%);
+    width: 40%;
+}
+
+.header{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.main span{
+    position: relative;
+}
+
+.main span i{
+    position: absolute;
+}
+
+.main input{
+    margin: 15px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px dotted black;
+    size: 30px;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: #333;
+}
+
+.main p{
+    margin: 15px;
+    margin-bottom: unset;
+    font-size: 20px;
+    color: #333;
+    font-style: normal;
+    font-weight: 900;
+}
+
+.main button{
+    margin-bottom: unset;
+    font-size: 20px;
+    color: #333;
+    border-radius: 30%;
+    margin-left: 30px;
+}
+
+.social a{
+    font-size: 30px;
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 35%;
+    background-color: blue;
+    color: white;
+    line-height: 30px;
+    margin: 20px;
+}
+
+.social a:nth-child(2){
+    background-color: lightblue;
+}
+
+.social a:nth-child(3){
+    background-color: red;
+}
