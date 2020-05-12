@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    height: 800px;
+    background: linear-gradient(to bottom left, pink 20%, #00ffff 85%);
+}
+
+.container{
+    background-color: white;
+    width: 380px;
+    margin : 50px auto;
+}
+
+.header{
+    padding-top: 60px;
+    padding-bottom: 70px;
+    font-size: 30px;
+    text-align: center;
+    color: #333;
+}
+
+.main{
+    text-align: center;
+}
+
+.main span{
+    position: relative;
+}
+
+.main span i{
+    position: absolute;
+}
+
+.main input{
+    width: 290px;
+    height: 35px;
+    margin-bottom: 35px;
+    border: none;
+    padding-left: 25px;
+    border-bottom: 2px solid #ccc;
+    color: #333;
+    box-sizing: border-box;
+    font-size: 15px;
+    transition: 2s;
+}
+
+.main button{
+    border: none;
+    outline: none;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    background: linear-gradient(to bottom left, gray 40%, #00ffff 85%);
+
+}
+
+.main p{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.social a{
+    font-size: 30px;
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 35%;
+    background-color: blue;
+    color: white;
+    line-height: 50px;
+    margin: 20px;
+}
+
+.social a:nth-child(2){
+    background-color: lightblue;
+}
+
+.social a:nth-child(3){
+    background-color: red;
+}
