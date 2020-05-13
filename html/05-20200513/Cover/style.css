@@ -1,0 +1,18 @@
+body{
+    background-color: gray;
+    color: blanchedalmond;
+    height: 100% vh;
+}
+.col-6 a{
+    border: none;
+    border-bottom: 3px solid;
+    color: white;
+}
+
+.col-6 h1{
+    color: white;
+}
+
+.col-6 button{
+    margin-left: 125px;
+}
