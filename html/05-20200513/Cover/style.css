@@ -3,10 +3,12 @@ body{
     color: blanchedalmond;
     height: 100% vh;
 }
-.col-6 a{
+.col-6 a:hover{
     border: none;
     border-bottom: 3px solid;
     color: white;
+    background-color: teal;
+    text-decoration: none;
 }
 
 .col-6 h1{

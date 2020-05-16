@@ -1,0 +1,19 @@
+.Content{
+    &__Sign-up-button{
+        &--green-theme{
+            background-color: green;
+        }
+
+        &--text-white{
+            color:white;
+        }
+
+        &--font-size{
+            font-size: 100px;
+        }
+
+        &--margin-top{
+            margin-top: 10px;
+        }
+    }   
+}

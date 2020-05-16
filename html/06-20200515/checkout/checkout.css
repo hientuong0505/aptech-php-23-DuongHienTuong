@@ -1,0 +1,19 @@
+html , body{
+    height: 100%;
+}
+
+.abc{
+    text-align: center;
+}
+
+h3,p {
+    text-align: center;
+}
+
+img{
+    margin-left: 670px;
+}
+
+.div{
+    display: flex;
+}
