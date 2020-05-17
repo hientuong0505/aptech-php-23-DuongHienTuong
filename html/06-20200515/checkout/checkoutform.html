@@ -8,17 +8,18 @@
 </head>
 
 <body>
-    <div class="container-fluid h-auto text-uppercase bg-white" class="abc">
-        
+    <div class="container h-auto text-uppercase bg-white" class="abc">
+
         <img src="bootstrap11.jpg" width="150" height="120">
         <h3>Checkout form</h3>
-        <p>Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation 
+        <p>Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a
+            validation
             state that can be triggered by attempting to submit the form without completing it.</p>
     </div><br><br>
 
-    <div class="container h-auto">
+    <div class="container h-auto d-flex">
         <div class="row">
-            <form>
+            <form action="#" method="POST">
                 <div class="col-8">
                     <h4>Billing address</h4>
                     <div class="div mt-3">
@@ -27,20 +28,204 @@
                             <input type="text" placeholder="First of name">
                         </div>
 
-                        <div>                    
+                        <div>
                             <label>Last Name</label>
                             <input type="text" placeholder="Last of name">
                         </div>
                     </div>
-///////////////////////////
+
+                    <div class="input-group mt-3">
+                        <div>
+                            <span>Username</span>
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">@</span>
+                                <input type="text" placeholder="Username" size="46">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-group mt-3">
+                        <div>
+                            <span>Email</span>
+                            <div class="input-group-prepend">
+                                <input type="text" placeholder="example@gmail.com" size="52">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-group mt-3">
+                        <div>
+                            <span>Address</span>
+                            <div class="input-group-prepend">
+                                <input type="text" placeholder="Address" size="52">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-group mt-3">
+                        <div>
+                            <span>Address 2 (Option)</span>
+                            <div class="input-group-prepend">
+                                <input type="text" placeholder="Address" size="52">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3 d-flex">
+                        <div class="col-5">
+                            <div>
+                                <span>Country</span>
+                                <div>
+                                    <select class="custom-select w-100">
+                                        <option select>Choose...</option>
+                                        <option value="VietNam">VietNam</option>
+                                        <option value="USA">USA</option>
+                                        <option value="England">England</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <span>State</span>
+                            <div>
+                                <select class="custom-select w-100">
+                                    <option select>Choose...</option>
+                                    <option value="VietNam">VietNam</option>
+                                    <option value="USA">USA</option>
+                                    <option value="England">England</option>
+                                </select>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-3">
+                            <div>
+                                <span>Zip</span>
+                                <div class="input-group-prepend">
+                                    <input type="text" size="10">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="border border-dark mb-3">
+
+                    <div>
+                        <input type="checkbox">Shipping address is the same as my billing address
+                    </div>
+                    <div>
+                        <input type="checkbox">Save this information for next time
+                    </div>
+                    <hr class="border border-dark mb-3">
+
+                    <h5>Payment</h5>
+
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="credit">
+                        <label class="custom-control-label" for="credit">Credit card</label><br>
+
+                        <input type="radio" class="custom-control-input" id="debit">
+                        <label class="custom-control-label" for="debit">Debit card</label><br>
+
+                        <input type="radio" class="custom-control-input" id="pay">
+                        <label class="custom-control-label" for="pay">Paypal</label>
+                    </div>
+
+                    <div class="mt-4 d-flex">
+                        <div>
+                            <div><label>Name on card</label></div>
+                            <input type="text" placeholder="ID">
+                        </div>
+
+                        <div class="ml-4">
+                            <div><label>Credit Number</label></div>
+                            <input type="text" placeholder="Number">
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4 d-flex">
+                        <div>
+                            <div><label>Expriration</label></div>
+                            <input type="text">
+                        </div>
+
+                        <div class="ml-3">
+                            <div><label>CVV</label></div>
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <hr class="border border-dark mb-3">
+
+                    <button type="button" class="btn btn-primary btn-lg btn-block">Continue to Checkout</button>
                 </div>
             </form>
 
-            <div class="col-4"></div>
+            <div class="col-4">
+                <div >
+                    <div class="d-flex">
+                        <h4 class="mr-5">Your cart</h4>
+                        <h4 class="ml-5">3</h4>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex">
+                            <div>
+                                <h6>Product name</h6>
+                                <small>Brief description</small>
+                            </div>
+                            <span class="marin-left">$12</span>
+                        </li>
+                        <li class="list-group-item d-flex">
+                            <div>
+                                <h6>Second product</h6>
+                                <small>Brief description</small>
+                            </div>
+                            <span class="marin-left">$8</span>
+                        </li>
+                        <li class="list-group-item d-flex">
+                            <div>
+                                <h6>Thrid Product</h6>
+                                <small>Brief description</small>
+                            </div>
+                            <span class="marin-left">$5</span>
+                        </li>
+                        <li class="list-group-item d-flex">
+                            <div>
+                                <h6>Promo code</h6>
+                                <small>Brief description</small>
+                            </div>
+                            <span class="marin-left">-$5</span>
+                        </li>
+                        <li class="list-group-item d-flex">
+                            <div>
+                                <h6>Total</h6>
+                                <small>Brief description</small>
+                            </div>
+                            <span class="marin-left">$12</span>
+                        </li>
+                    </ul>
+
+                    <form class="mt-4">
+                        <div class="input-group">
+                            <input type="text" placeholder="promo code">
+                            <div class="input-group-prepend">
+                                <button type="button" class="btn btn-primary btn-block">Redeem</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="container h-auto"></div>
+    <div class="container h-auto mt-5 mb-4">
+        <div class="row">
+            <div class="col-12">© 2017-2019 Company Name<br>
+                <a href="">Privacy</a>
+                <a href="">Terms</a>
+                <a href="">Support</a>
+            </div>
+        </div>
+    </div>
 
 </body>
 

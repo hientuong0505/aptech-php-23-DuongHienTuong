@@ -11,9 +11,22 @@ h3,p {
 }
 
 img{
-    margin-left: 670px;
+    margin-left: 470px;
 }
 
 .div{
     display: flex;
+}
+
+.row{
+    display: flex;
+
+}
+
+.marin-left{
+    margin-left: auto;
+}
+
+.col-12{
+    text-align: center;
 }
