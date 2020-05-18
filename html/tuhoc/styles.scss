@@ -1,0 +1,19 @@
+.container-fluid{
+    &--text-blue{
+        color:blue;
+    }
+}
+
+.container{
+    &__col-4{
+        &--text-red{
+            color:red;
+        }
+    }
+
+    &__row{
+        &--back-ground-light{
+            background-color: lightcyan;
+        }
+    }
+}

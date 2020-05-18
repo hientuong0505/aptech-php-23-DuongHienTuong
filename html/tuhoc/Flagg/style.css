@@ -1,0 +1,24 @@
+.container__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container--col-4 {
+  background-color: yellow;
+  width: 150px;
+  height: 150px;
+}
+
+.container--col-5 {
+  background-color: red;
+  width: 150px;
+  height: 150px;
+}
+
+.container--col-3 {
+  background-color: blue;
+  width: 150px;
+  height: 150px;
+}
+/*# sourceMappingURL=style.css.map */

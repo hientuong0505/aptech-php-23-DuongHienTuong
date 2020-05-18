@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+
+    &-first{
+        width: 150px;
+        height: 150px;
+        background-color: red;
+    }
+
+    &-second {
+        width: 150px;
+        height: 150px;
+        background-color: blue;
+    }
+
+    &-third {
+        width: 150px;
+        height: 150px;
+        background-color: yellow;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .div {
+        display: flex;
+
+        &-first {
+            width: 250px;
+            height: 250px;
+            background-color: blue;
+        }
+
+        &-second {
+            width: 250px;
+            height: 250px;
+            background-color: red;
+        }
+
+        &-third {
+            width: 250px;
+            height: 250px;
+            background-color: yellow;
+        }
+    }
+}

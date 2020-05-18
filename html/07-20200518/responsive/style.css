@@ -1,0 +1,47 @@
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-first {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+}
+
+.container-second {
+  width: 150px;
+  height: 150px;
+  background-color: blue;
+}
+
+.container-third {
+  width: 150px;
+  height: 150px;
+  background-color: yellow;
+}
+
+@media only screen and (min-width: 1200px) {
+  .div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .div-first {
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+  }
+  .div-second {
+    width: 250px;
+    height: 250px;
+    background-color: red;
+  }
+  .div-third {
+    width: 250px;
+    height: 250px;
+    background-color: yellow;
+  }
+}
+/*# sourceMappingURL=style.css.map */
