@@ -1,0 +1,44 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.container-fluid--bg-dark {
+  background-color: #6E6E6E;
+}
+
+.container-fluid--height-80px {
+  height: 80px;
+}
+
+.container-fluid--textCenter-colorWhite {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  margin-top: 15px;
+}
+
+.container-fluid--height-800px {
+  height: 920px;
+}
+
+.container-fluid--bg-dark1 {
+  background-color: #E6E6E6;
+}
+
+.container__col-8--textCenter {
+  text-align: center;
+}
+
+.container--fontSize {
+  font-size: 16px;
+}
+
+.container--card-w300px {
+  width: 300px;
+}
+
+.container--card-img-w300px {
+  width: 300px;
+}
+/*# sourceMappingURL=style.css.map */

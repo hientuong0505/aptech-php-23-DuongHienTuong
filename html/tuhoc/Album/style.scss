@@ -1,0 +1,49 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.container-fluid{
+    &--bg-dark{
+        background-color: #6E6E6E;
+    }
+
+    &--height-80px{
+        height: 80px;
+    }
+
+    &--textCenter-colorWhite{
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        margin-top: 15px;
+    }
+
+    &--height-800px{
+        height: 3000px;
+    }
+
+    &--bg-dark1{
+        background-color: #E6E6E6;
+    }
+}
+
+.container{
+    &__col-8{
+        &--textCenter{
+            text-align: center;
+        }
+    }
+
+    &--fontSize{
+        font-size: 16px;
+    }
+
+    &--card-w300px{
+        width: 300px;
+    }
+
+    &--card-img-w300px{
+        width: 300px;
+    }
+}
