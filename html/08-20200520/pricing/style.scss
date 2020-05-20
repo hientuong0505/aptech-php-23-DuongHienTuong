@@ -1,0 +1,18 @@
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    &--text-align{
+        text-align: right;
+    }
+
+    &--text-dark{
+        color: black;
+    }
+
+    &--textCenter{
+        text-align: center;
+    }
+}
