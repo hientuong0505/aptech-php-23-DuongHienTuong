@@ -3,15 +3,7 @@ html, body {
   height: 100%;
 }
 
-.container--text-align {
-  text-align: right;
-}
-
-.container--text-dark {
-  color: black;
-}
-
-.container--textCenter {
-  text-align: center;
+.container--textWhite {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

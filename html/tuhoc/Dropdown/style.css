@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+#menu ul{
+    list-style-type: none;
+    background-color: lightblue;
+    text-align: center;
+}
+
+#menu ul li{
+    color: #f1f1f1;
+    display: inline-table;
+    width: 120px;
+    height: 80px;
+    line-height: 80px;
+    position: relative;
+}
+
+#menu ul li a{
+    color :lightslategray;
+    text-decoration: none;
+    display: block;
+}
+
+#menu ul li a:hover{
+    background-color: maroon;
+    color: #333;
+}
+
+#menu ul li > .sub-menu{
+    display: none;
+    position: absolute;
+}
+
+#menu ul li:hover .sub-menu{
+    display: block;
+}
