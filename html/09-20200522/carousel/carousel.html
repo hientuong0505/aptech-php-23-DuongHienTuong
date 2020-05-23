@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js""></script>
+    <script src=" https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"> </script> <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!--Container so 1-->
+    <div class="container-fluid h-auto m-auto fixed-top">
+        <div class="row bg-secondary justify-content-between">
+            <div class="col-2">
+                <h3>Carousel</h3>
+            </div>
+            <div class="col-10 d-flex justify-content-between">
+                <div>
+                    <a href=# style="color: white;">Home</a>
+                    <a href=# style="color: white;">Link</a>
+                    <a href=# style="color: white;">Disable</a>
+                </div>
+                <form>
+                    <input type="text" placeholder="Search">
+                    <button class="btn btn-outline-success">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+<!--Container so 2-->
+    <div class="container-fluid h-auto bg-dark" id="TOP" style="margin-top: 40px;">
+        <div class="row">
+            <div class="col-12">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-block" alt="..." style="background-image: url('123.jpg'); background-repeat: no-repeat;
+                    background-size: cover; width: 200px; height: 200px;">
+                            </div>
+                            <div class="carousel-caption d-none d-md-block text-white">
+                                <h5>First slide label</h5>
+                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                <a href="#" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-block" alt="..." style="background-image: url('123.jpg'); background-repeat: no-repeat;
+                    background-size: cover; width: 200px; height: 200px;">
+                            </div>
+                            <div class="carousel-caption d-none d-md-block text-dat-white">
+                                <h5>Second slide label</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <a href="#" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-block" alt="..." style="background-image: url('123.jpg'); background-repeat: no-repeat;
+                    background-size: cover; width: 200px; height: 200px;">
+                            </div>
+                            <div class="carousel-caption d-none d-md-block text-dat-white">
+                                <h5>Third slide label</h5>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                <a href="#" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--Container so 3-->
+    <div class="container mt-5">
+        <div class="row">
+            <!--Hinh dau tien-->
+            <div class="col-12 col-md-4">
+                <img src="logo.jpg">
+                <h3>Heading</h3>
+                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
+                    vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                    Praesent commodo cursus magna.
+                </p>
+                <a href="#" class="btn btn-secondary">View details</a>
+            </div>
+            <!--Hinh thu hai-->
+            <div class="col-12 col-md-4">
+                <img src="kevin.jpg">
+                <h3>Heading</h3>
+                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
+                    vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                    Praesent commodo cursus magna.
+                </p>
+                <a href="#" class="btn btn-secondary">View details</a>
+            </div>
+            <!--Hinh thu ba-->
+            <div class="col-12 col-md-4">
+                <img src="kevin1.jpg">
+                <h3>Heading</h3>
+                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
+                    vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                    Praesent commodo cursus magna.
+                </p>
+                <a href="#" class="btn btn-secondary">View details</a>
+            </div>
+        </div>
+    </div>
+<!--Container so 4-->
+    <div class="container mt-4">
+        <hr>
+        <div class="row">
+            <div class="col-md-7 col-12">
+                <h2>First featurette heading. It’ll blow your mind.</h2>
+                <p>Donec ullamcorper nulla non metus auctor fringilla.
+                    Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl
+                    consectetur. Fusce dapibus, tellus ac cursus commodo.
+                </p>
+            </div>
+            <div class="col-md-5 col-12">
+                <div class="bg-light" style="height: 300px; width: 300px;">
+                    <h1 class="p-5">500x500</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--Container so 5-->
+    <div class="container">
+        <hr>
+        <div class="row">
+            <div class="col-md-5 col-12">
+                <div class="bg-light" style="height: 300px; width: 300px;">
+                    <h1 class="p-5">500x500</h1>
+                </div>
+            </div>
+            <div class="col-md-7 col-12">
+                <h2>First featurette heading. It’ll blow your mind.</h2>
+                <p>Donec ullamcorper nulla non metus auctor fringilla.
+                    Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl
+                    consectetur. Fusce dapibus, tellus ac cursus commodo.
+                </p>
+            </div>
+        </div>
+    </div>
+<!--Container so 6-->
+    <div class="container">
+        <hr>
+        <div class="row">
+            <div class="col-md-7 col-12">
+                <h2>First featurette heading. It’ll blow your mind.</h2>
+                <p>Donec ullamcorper nulla non metus auctor fringilla.
+                    Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl
+                    consectetur. Fusce dapibus, tellus ac cursus commodo.
+                </p>
+            </div>
+            <div class="col-md-5 col-12">
+                <div class="bg-light" style="height: 300px; width: 300px;">
+                    <h1 class="p-5">500x500</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--Container so 7-->
+    <div class="container mt-5 mb-5">
+        <hr>
+        <div class="row">
+            <div class="col-9">© 2017-2019 Company, Inc. · Privacy · Terms</div>
+            <div class="col-3">
+                <a href="#TOP">Back to top</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

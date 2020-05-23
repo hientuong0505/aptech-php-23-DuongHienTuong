@@ -1,0 +1,17 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    & img{
+        width:200px;
+        height:200px;
+        background-image: url('anh-3.jpeg');
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%; 
+    }
+
+}
