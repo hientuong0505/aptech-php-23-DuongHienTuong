@@ -1,0 +1,48 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    &--textCenter{
+        text-align: center;
+    }
+
+    &--textDark{
+        color: gray;
+    }
+
+    &--height100-width100{
+        height: auto;
+        width: auto;
+        background-color: lightcoral;
+    }
+
+    &--textSize{
+        font-size: 15px;
+    }
+
+    &--textBlack{
+        color: black;
+    }
+
+    & li a{
+        color: black;
+        text-decoration: none;
+    }
+
+}
+
+.btn-group{
+    &--radius50{
+        border-radius: 50%;
+    }
+}
+
+.A{
+    &__B{
+        & li:hover{
+            background-color: orange;
+        }
+    }
+}
