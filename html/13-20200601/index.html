@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <table class="table table-hover table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+    <button id="nutAn" class="btn btn-outline-primary mt-5">Click me</button>
+
+    <script>
+        $(document).ready(function(){
+            $('#nutAn').click(function(){
+                $.get('https://namcoi.com/du-an/aptech-php-laravel-crud-user/public/api/users',function(data,status){
+                    for(var i=0; i<data.users.length;i++){
+                        var user = data.users[i]; //Gan user cho tung phan tu vong lap Users gom (ID,Name,Email)
+
+                        var tr = document.createElement('tr'); //Khoi tao TableRow
+
+                        var keyArray = ["id","name","email"]; //Lay du lieu theo DataBase tu may chu
+
+                        for (var j=0; j<keyArray.length;j++){
+                            var value = user[keyArray[j]];
+
+                            var td = document.createElement('td'); //Khoi tao TableData
+                            td.innerHTML = value; //Lay du lieu Value tu vong lap gan vao cho TableData
+
+                            tr.appendChild(td); //Dua TableData vao TableRow
+                        }
+                        $('#tableBody').append(tr); //Dua TableRow vao ben trong TableBody
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
