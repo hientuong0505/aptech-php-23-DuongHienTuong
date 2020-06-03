@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.sanho{
+    background-image: url('sanho.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh; 
+    width: 100%;
+}
+
+.htmll{
+    background-image: url('html.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh; 
+    width: 100%;
+}
+
+.child{
+    background-image: url('child.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh; 
+    width: 100%;
+}
+
+img{
+    border-radius: 50%;
+}
+
+.A{
+    text-decoration: none;
+    color: black;
+}
+
+.A:hover{
+    text-decoration: none;
+}
