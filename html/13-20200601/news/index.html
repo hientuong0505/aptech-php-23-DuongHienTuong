@@ -6,20 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script src="js.js"></script>
     <title>NEWS</title>
 </head>
 
 <body>
     <div class="container mt-2">
         <div class="row">
-            <div class="col-2">
+            <div class="col-2 d-none d-md-block">
                 <a href="#" class="btn btn-outline-primary text-left">Sign Up Now</a>
             </div>
             <div class="col-8 text-center">
                 <h3>NEWS</h3>
             </div>
-            <div class="col-2">
+            <div class="col-2 text-right d-none d-md-block">
                 <i class="fas fa-search mr-2"></i>
                 <a href="#" class="btn btn-outline-success text-right">Sign In</a>
             </div>
@@ -29,14 +31,33 @@
 
     <div class="container mt-2">
         <div class="row">
-            <div class="col-12 justify-content-between d-flex">
-                <a href="#">HOME</a>
-                <a href="#">HTML</a>
-                <a href="#">CSS</a>
-                <a href="#">JavaScript</a>
-                <a href="#">PHP</a>
-                <a href="#">CONTACT</a>
-            </div>
+                <!-- <div class="d-md-none">
+                    <nav class=" navbar navbar-dark bg-success p-0">
+                        <button id="nutAn" class="navbar-toggler">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
+                </div> -->
+                <div class="togg d-block d-md-none">
+                    <i class="fas fa-bars p-2" id="nutHien"></i>
+                </div>
+                
+                <div class="col-12 d-flex justify-content-between canAn">
+                    <a href="#" >HOME</a>
+                    <a href="#" >HTML</a>
+                    <a href="#" >CSS</a>
+                    <a href="#">JavaScript</a>
+                    <a href="#" >PHP</a>
+                    <a href="#">CONTACT</a>
+                    <!-- <ul class="list-unstyled d-md-flex justify-content-between">
+                        <li>HTML</li>
+                        <li>PHP</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Bootstrap</li>
+                    </ul> -->
+                </div>
+            
         </div>
     </div>
 
@@ -69,19 +90,19 @@
                         <p>HOT NEWS</p></i>
                     </li>
                     <li class="list-group-item d-flex justify-content-between">Manchester City
-                        <i class="fas fa-futbol"></i>
+                        <i class="fas fa-futbol text-danger"></i>
                     </li>
                     <li class="list-group-item d-flex justify-content-between">Real Madrid
-                        <i class="fas fa-futbol"></i>
+                        <i class="fas fa-futbol text-primary"></i>
                     </li>
                     <li class="list-group-item d-flex justify-content-between">Liverpool
                         <i class="fas fa-futbol"></i>
                     </li>
-                    <li class="list-group-item d-flex justify-content-between">Cheasel
-                        <i class="fas fa-futbol"></i>
+                    <li class="list-group-item d-flex justify-content-between">Chelsea
+                        <i class="fas fa-futbol text-secondary"></i>
                     </li>
                     <li class="list-group-item d-flex justify-content-between">Dortmund
-                        <i class="fas fa-futbol"></i>
+                        <i class="fas fa-futbol text-success"></i>
                     </li>
                 </ul>
             </div>
@@ -91,7 +112,7 @@
 
     <div class="container mt-3">
         <div class="row">
-            <div class="col-8">
+            <div class="col-md-8 col-12">
                 <div class="d-flex justify-content-between">
                     <div class="card" style="width: 18rem;">
                         <img src="hoahong.jpg" class="card-img-top" style="height: 18rem;">
@@ -146,23 +167,24 @@
 
             </div>
 
-            <div class="col-4">
+            <div class="col-md-4 col-12">
                 <div class="card h-100" style="width: 18rem;">
                     <img src="gai.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                      <li class="list-group-item">Cras justo odio</li>
-                      <li class="list-group-item">Dapibus ac facilisis in</li>
-                      <li class="list-group-item">Vestibulum at eros</li>
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
                     </ul>
                     <div class="card-body">
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
         <hr>
@@ -170,25 +192,26 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-4">
+            <div class="col-md-4 col-12">
                 <div class="card h-100" style="width: 18rem;">
                     <img src="hoatim.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                      <li class="list-group-item">Cras justo odio</li>
-                      <li class="list-group-item">Dapibus ac facilisis in</li>
-                      <li class="list-group-item">Vestibulum at eros</li>
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
                     </ul>
                     <div class="card-body">
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
                     </div>
-                  </div>
+                </div>
             </div>
-            <div class="col-8">
+            <div class="col-md-8 col-12">
                 <div class="d-flex justify-content-between">
                     <div class="card" style="width: 18rem;">
                         <img src="vuonhoavang.jpg" class="card-img-top" style="height: 18rem;">
@@ -270,6 +293,8 @@
             </div>
         </div>
     </div>
+
+    
 </body>
 
 </html>

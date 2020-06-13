@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.div-cha {
+    height: 100px;
+    width: 100%;
+    background-color: lightblue;
+    display: flex;
+}
+
+.div-con{
+    padding-left: 500px;
+    display: flex;
+}
