@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: silver;
+}
+
+.login {
+  height: 100%;
+  &__form {
+    top: 30%;
+    position: absolute;
+    box-shadow: 5px 5px 10px;
+    &--red {
+      background-color: red;
+    }
+    &--green {
+      background-color: green;
+    }
+    &--white-smoke {
+      background-color: whitesmoke;
+    }
+
+    & button {
+      border-radius: 0;
+    }
+    & img {
+      width: 40px;
+    }
+    & input {
+      border-radius: 0;
+    }
+    & .input {
+      &-group {
+        &-prepend {
+          width: 30%;
+        }
+        &-text {
+          border-radius: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
