@@ -94,3 +94,18 @@
 </body>
 
 </html>
+
+                    <!-- <tbody>
+                    <?php 
+                        if ($result->num_rows > 0) { 
+                            while ($row = $result->fetch_assoc()) {
+                                echo "<tr>";
+                                    echo "<td>" . $row["id"]. "</td><td>" . $row["name"] . "</td><td>" . $row["email"] . "</td><br>";
+                                echo "</tr>";
+                            }
+                        } else {
+                            echo "Không có giá trị trả về";
+                        }
+                        $conn->close();
+                        ?>
+                    </tbody> -->
