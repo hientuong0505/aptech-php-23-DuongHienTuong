@@ -13,6 +13,20 @@ Font Awesome
 https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css
 
 ----------------------------------------------------------------------------------
-
 jquery
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+----------------------------------------------------------------------------------
+Tạo dự án CRUD Laravel
+B1: Composer create-project --prefer-dist laravel/laravel Blog "6.*"
+
+B2: Tạo DataBase
++ php artisan make:migration create_users_table
++ php artisan migrate
++ Nếu muốn quay lại tạo migration: php artisan migrate:rollback
+
++ php artisan make:seeder UsersTableSeeder
++ php artisan db:seed
+
++ php artisan make:controller UserControllers --resource
+(php artisan make:model User -mcr)
