@@ -40,7 +40,7 @@ index page
                                 <input type="hidden" name="_token" value="{{csrf_token()}}">
                                 <input type="hidden" name="_method" value="delete">
                                 <button class="btn btn-sm btn-danger rounded-0">
-                                  Delete
+                                    <i class="fas fa-trash-alt fa-2x"></i>
                                 </button>
                               </form>
                         </td>
