@@ -19,7 +19,9 @@
     <hr>
     @section('content') @show
     <hr>
+    @if(Route::currentRouteName() == 'users.index')
     @include('layout.footer')
+    @endif
 
 </body>
 </html>

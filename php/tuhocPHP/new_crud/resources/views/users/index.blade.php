@@ -48,7 +48,7 @@ index page
                     @endforeach
                 </tbody>
             </table>
-
+            <div class="d-flex justify-content-center">{{ $users->appends(['sort' => 'votes'])->links() }}</div>
         </div>
     </div>
 </div>
