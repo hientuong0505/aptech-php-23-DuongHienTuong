@@ -1,0 +1,63 @@
+html,
+body {
+  font-family: 'Montserrat', sans-serif;
+
+  color:black;
+}
+
+html,body {
+  margin: 0;
+  padding:0;
+}
+
+label.error{
+  color: red;
+  font-weight: 300;
+}
+
+.form-register{
+  background: #34495e;
+  color: white;
+}
+
+.box{
+  width: 300px;
+  padding: 40px;
+  background: #191919;
+  text-align: center;
+  background-image: url('https://img.thuthuatphanmem.vn/uploads/2018/09/29/anh-nen-ma-tran-mau-den-dep_053032807.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.box input{
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #7401DF;
+  padding: 14px 10px;
+  width: 400px;
+  outline: none;
+  border-radius: 24px;
+  transition: 0.5s;
+  color: red;
+}
+
+.box input:hover{
+  width: 650px;
+  border: 2px solid #2ecc71;
+}
+
+.btn-dangKy{
+  border-radius: 24px;
+  outline: none;
+  transition: 0.5s;
+  display: block;
+}
+
+.btn-dangKy:hover{
+  background: #2ecc71;
+  width: 100px;
+}
