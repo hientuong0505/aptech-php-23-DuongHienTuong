@@ -71,12 +71,12 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'], function () {
     
         Route::post('/update/{id}',[
             'as' => 'menus.update',
-            'uses' => 'menus@update'
+            'uses' => 'menuController@update'
         ]);
     
         Route::get('/delete/{id}',[
             'as' => 'menus.delete',
-            'uses' => 'menus@destroy'
+            'uses' => 'menuController@destroy'
         ]);
     });
 
@@ -101,7 +101,15 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'], function () {
             'as' => 'product.edit',
             'uses' => 'ProductController@edit'
         ]);
-       
+        Route::post('update/{id}',[
+            'as' => 'product.update',
+            'uses' => 'ProductController@update'
+        ]);
+
+        Route::get('/delete/{id}',[
+            'as' => 'product.delete',
+            'uses' => 'ProductController@destroy'
+        ]);
     });
 });
 

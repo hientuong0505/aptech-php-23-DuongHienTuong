@@ -14,7 +14,7 @@
 <div class="content-wrapper">
   @include('partials.content-header',['name' => 'Chỉnh sửa', 'key' => 'sản phẩm'])
 
-  <form action="{{ route('product.store') }}" method="POST" enctype="multipart/form-data">
+  <form action="{{ route('product.update',['id' => $product->id]) }}" method="POST" enctype="multipart/form-data">
     <div class="content">
       <div class="container-fluid">
         <div class="row">
@@ -79,7 +79,7 @@
                         <label>Nhập tags cho sản phẩm</label>
                         <select class="form-control tag_select_choose" multiple="multiple" name="tags[]">
                           @foreach($product->tags as $tagItem)
-                          <option value="{{$tagItem->id}}" selected>{{$tagItem->name}}</option>
+                          <option value="{{$tagItem->name}}" selected>{{$tagItem->name}}</option>
                           @endforeach
                         </select>
                     </div>
