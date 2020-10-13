@@ -22,6 +22,7 @@
     @if(Route::currentRouteName() == 'users.index')
     @include('layout.footer')
     @endif
+    @stack('script')
 
 </body>
 </html>

@@ -3,7 +3,7 @@
       <div class="col-12">
         <div class="d-flex justify-content-between align-items-center">
           <span class="text-uppercase text-muted">
-            <i class="fab fa-dev fa-3x"></i>
+            <i class="fab fa-dev fa-3x" style="color: black"></i>
           </span>
           <form action="{{route('users.create')}}" method="get">
             <button type="submit" class="btn btn-info text-uppercase font-weight-bold rounded-0">

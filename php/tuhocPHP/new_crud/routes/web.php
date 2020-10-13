@@ -26,3 +26,5 @@ Route::get('/users/create', 'UserController@create')->name('users.create');
 //Edit nguoi dung
 Route::get('/users/{user}/edit', 'UserController@edit')->name('users.edit')->where('user','[0-9]+');
 Route::put('users/{user}', 'UserController@update')->name('users.update')->where('user','[0-9]+');
+
+Route::get('/search','UserController@getSearch')->name('users.search');

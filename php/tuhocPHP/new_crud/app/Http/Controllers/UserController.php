@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
@@ -100,5 +101,14 @@ class UserController extends Controller
     {
         User::destroy($id);
         return redirect()->route('users.index');
+    }
+
+    public function getSearch(Request $request)
+    {
+        $search = $request->get('search');
+        $user = DB::table('users')->where('name','like','%' .$search. '%')->paginate(5);
+        return view('users.index',[
+            'users' => $user
+        ]);
     }
 }

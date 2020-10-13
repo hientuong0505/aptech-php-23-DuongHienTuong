@@ -14,7 +14,7 @@ class ArticlesTableSeeder extends Seeder
     public function run()
     {
         $faker = Faker\Factory::create();
-        for($i=0;$i<10;$i++) {
+        for($i=0;$i<5;$i++) {
             $title = $faker->sentence(rand(3,7),true);
             $slug = Str::slug($title,'-');
             $description = $faker->text(rand(100,300));

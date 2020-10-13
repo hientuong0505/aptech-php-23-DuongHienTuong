@@ -16,7 +16,7 @@ class ArticleController extends Controller
     public function index()
     {
         $articles = Article::all();
-        dd($articles);
+        return view('articles.index',['articles'=>$articles]);
     }
 
     /**
@@ -26,10 +26,7 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        $categories = ['Thoi su','Bong da','Quan su','Thoi tiet'];
-        return view('articles.create',[
-            'categories' => $categories,
-        ]);
+        return view('articles.create');
     }
 
     /**
@@ -61,7 +58,8 @@ class ArticleController extends Controller
      */
     public function show(Article $article)
     {
-        //
+        return view ('articles.show',
+        ['article'=>$article]);
     }
 
     /**
@@ -72,7 +70,9 @@ class ArticleController extends Controller
      */
     public function edit(Article $article)
     {
-        //
+        return view('articles.edit',[
+            'article' => $article
+        ]);
     }
 
     /**
@@ -84,7 +84,12 @@ class ArticleController extends Controller
      */
     public function update(Request $request, Article $article)
     {
-        //
+        $article->title = $request->title;
+        $article->description = $request->description;
+        $article->password = bcrypt($request->password);
+        $article->save();
+
+        return redirect()->route('articles.index');
     }
 
     /**
@@ -93,8 +98,9 @@ class ArticleController extends Controller
      * @param  \App\Article  $article
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Article $article)
+    public function destroy($id)
     {
-        //
+        Article::destroy($id);
+        return redirect()->route('articles.index');
     }
 }

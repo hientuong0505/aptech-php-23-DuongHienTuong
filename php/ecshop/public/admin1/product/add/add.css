@@ -1,0 +1,17 @@
+.select2-selection__choice {
+    background-color: #271010 !important;
+}
+
+.feature_img{
+    margin-top: 15px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.image_product_detail{
+    margin-top: 15px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}

@@ -7,9 +7,9 @@ index page
 <div class="container mt-2">
     <div class="row">
         <div class="col-12">
-            <table class="table table-hover table-bordered">
+            <table class="table table-hover table-bordered table-dark table-striped">
                 <thead class="thead-dark">
-                    <tr class="text-center">
+                    <tr class="text-center font-weight-bold" style="font-size: 20px">
                         <th>#</th>
                         <th>Name</th>
                         <th>Email</th>
@@ -39,7 +39,7 @@ index page
                             <form action="{{route('users.destroy',$user->id)}}" method="post">
                                 <input type="hidden" name="_token" value="{{csrf_token()}}">
                                 <input type="hidden" name="_method" value="delete">
-                                <button class="btn btn-sm btn-danger rounded-0">
+                                <button class="btn btn-sm btn-danger rounded-0" style="color: black">
                                     <i class="fas fa-trash-alt fa-2x"></i>
                                 </button>
                               </form>

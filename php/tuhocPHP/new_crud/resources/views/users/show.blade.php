@@ -6,7 +6,7 @@ show page
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <table class="table table-hover table-bordered">
+            <table class="table table-hover table-bordered table-dark table-striped">
                 <thead class="text-center">
                     <th scope="col" class="">#</th>
                     <th scope="col" class="">Name</th>

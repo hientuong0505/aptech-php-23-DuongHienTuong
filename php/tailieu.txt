@@ -18,7 +18,7 @@ jquery
 
 ----------------------------------------------------------------------------------
 Tạo dự án CRUD Laravel
-B1: Composer create-project --prefer-dist laravel/laravel Blog "6.*"
+B1: composer create-project --prefer-dist laravel/laravel Blog "6.*"
 
 B2: Tạo DataBase
 + php artisan make:migration create_users_table
@@ -28,5 +28,5 @@ B2: Tạo DataBase
 + php artisan make:seeder UsersTableSeeder
 + php artisan db:seed
 
-+ php artisan make:controller UserControllers --resource
++ php artisan make:controller UserController --resource
 (php artisan make:model User -mcr)
