@@ -1,0 +1,10 @@
+.product_image_150_100{
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.alert-danger {
+    margin-top: 5px;
+    padding: 3px 5px;
+}

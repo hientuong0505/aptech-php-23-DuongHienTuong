@@ -5,7 +5,7 @@
 @endsection
 @section('content')
 <div class="content-wrapper">
-  @include('partials.content-header',['name' => 'Danh sach', 'key' => 'menu'])
+  @include('partials.content-header',['name' => 'Thêm', 'key' => 'menu'])
 
     <!-- Main content -->
     <div class="content">

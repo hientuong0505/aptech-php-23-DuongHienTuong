@@ -4,6 +4,10 @@
     <title>Trang chủ</title>
 @endsection
 @section('content')
+@section('js')
+  <script src="{{ asset('vendors/sweetAlert2/sweetalert2@10.js') }}"></script>
+  <script src="{{ asset('admin1/category/index/list.js') }}"></script>
+@endsection
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     @include('partials.content-header',['name' => 'Category', 'key' => 'List'])
@@ -33,7 +37,7 @@
                           <td> {{ $cate->name }}</td>
                           <td>
                             <a href="{{ route('categories.edit',['id' => $cate->id]) }}" class="btn btn-default">Sửa</a>
-                            <a href="{{ route('categories.delete',['id' => $cate->id]) }}" class="btn btn-danger">Xóa</a>
+                            <a href="{{ route('categories.delete',['id' => $cate->id]) }}" class="btn btn-danger action_delete">Xóa</a>
                           </td>
                         </tr>
                       @endforeach

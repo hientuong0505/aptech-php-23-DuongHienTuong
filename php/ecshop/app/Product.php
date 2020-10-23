@@ -3,10 +3,12 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Product extends Model
 {
-    protected $fillable = ['name','user_id','price','content','category_id','feature_image_path'];
+    use SoftDeletes;
+    protected $guarded = [];
 
     public function images()
     {

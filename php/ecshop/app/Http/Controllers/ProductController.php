@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Category;
 use Illuminate\Http\Request;
 use App\Components\Recusive;
+use App\Http\Requests\ProductAddRequest;
 use App\Product;
 use App\ProductImage;
 use App\ProductTag;
@@ -64,7 +65,7 @@ class ProductController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ProductAddRequest $request)
     {
         try {
             DB::beginTransaction();
@@ -208,13 +209,13 @@ class ProductController extends Controller
             return response()->json([
                 'code' => 200,
                 'message' => 'success',
-            ]);
+            ],200);
         } catch(\Exception $exception){
             Log::error('Message: '.$exception->getMessage(). 'Line: '. $exception->getLine());
             return response()->json([
                 'code' => 500,
                 'message' => 'fail',
-            ]);
+            ],500);
         }
 
     }
